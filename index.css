@@ -7,13 +7,6 @@ body {
     background-color: bisque;
 }
 
-@media screen and (max-width: 500px) {
-    .container_about_me {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -166,12 +159,38 @@ h1 {
     transform: scale(1.1);
 }
 
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px;
 }
 
 .icon {
     border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .container_about_me, .jobs, .interests {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    ul .search-item, .search {
+        display: none;
+    }
 }
