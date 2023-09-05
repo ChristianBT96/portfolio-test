@@ -117,13 +117,13 @@ h1 {
     margin: 30px;
     padding: 20px;
     border: 2px dotted blue;
+    list-style: none;
 }
 
-.interests-item {
+.interests li {
     width: 170px;
     height: 80px;
     padding: 10px;
-    background-color: lightgray;
     transition: transform 0.4s ease;
     cursor: pointer;
     font-family: Georgia, serif;
@@ -132,7 +132,14 @@ h1 {
     text-align: center;
 }
 
-.interests-item:hover {
+.gaming {
+    background-image: url("/icons8-apple-arcade-192.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.interests li:hover {
     transform: scale(1.2);
 }
 
