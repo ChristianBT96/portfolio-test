@@ -142,11 +142,12 @@ h1 {
     transform: scale(1.2);
 }
 
-#jobs {
+.jobs {
     display: flex;
     justify-content: space-between;
     margin: 30px;
     padding: 20px;
+    list-style: none;
 }
 
 .job {
